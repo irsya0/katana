@@ -4,7 +4,7 @@ MSI Katana GF66 11UE Modding Guide
 > NOTE: I am not liable for any damage caused to or by the laptop as a result of following this guide.
 
 ## vBIOS Modding
-Laptop manufacturers usually limit the GPU TDP due to the thermal overhead caused by higher wattage. One can bypass this limit by flashing the vBIOS from another device with the same GPU.
+Laptop manufacturers often limit the GPU TDP due to the thermal overhead caused by higher wattage. One can bypass this limit by flashing the vBIOS from another device with the same GPU.
 [This](https://youtu.be/ihTNBLoprDQ) YouTube Video shows the process for RTX 3000 series cards.
 
 The [vbios](./vbios) folder contains the required utility (`nvflash.exe`), the original vBIOS ROM of the MSI Katana GF66 11UE (RTX 3060), and the alternative 115W rom I flashed on my device.
@@ -16,7 +16,7 @@ nvflash.exe --protectoff
 nvflash.exe 3060-115-130.rom
 ```
 
-Be careful when selecting a new vBIOS - you could potentially brick your laptop! Also, keep in mind that a higher GPU TDP not only increases temperatures but can also cause system instability if other components don't receive enough power. Consider using a higher-wattage charger. Important: Ensure that the voltage of the new charger matches that of your original one, or you could damage your laptop.
+Be careful when selecting a new vBIOS; flashing the wrong one could brick your laptop! Also, keep in mind that a higher GPU TDP not only increases temperatures but can also cause system instability if other components don't receive enough power. Consider using a higher-wattage charger. Important: Ensure that the voltage of the new charger matches that of your original one, or you could damage your laptop.
 
 ## Keyboard replacement
 As some keys on my laptop keyboard stopped working, I decided to replace it myself.
